@@ -9,7 +9,7 @@ describe('Routes', () => {
     return chai.request(app)
       .get('/users')
       .then(function(res) {
-        assert(res.status == 200, "The response status code is not 200").to.have.status(200)
+        assert(res.status == 200, "The response status code is not 200")
         // assert(res).to.be.json
         // assert(res.body).to.be.an('object')
         // assert(res.body.users).to.be.an('array')
